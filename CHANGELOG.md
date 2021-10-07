@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/wmfs/cardscript-post-processor/compare/v1.0.0...v1.1.0) (2021-10-07)
+
+
+### ✨ Features
+
+* remove inherited show when at end of collection ([5d16460](https://github.com/wmfs/cardscript-post-processor/commit/5d164605462cbb240ca995e77aa3b7da74fa227e))
+
 # 1.0.0 (2021-10-07)
 
 
