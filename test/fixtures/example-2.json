@@ -1,0 +1,37 @@
+{
+  "body": [
+    {
+      "id": "component1",
+      "type": "Input.Text"
+    },
+    {
+      "showWhen": "component1 === 'RED'",
+      "type": "Container",
+      "items": [
+        {
+          "id": "component2",
+          "type": "Input.Text"
+        },
+        {
+          "showWhen": "component2 === 'BLUE'",
+          "id": "component3",
+          "type": "Input.Text"
+        }
+      ]
+    },
+    {
+      "type": "Container",
+      "items": [
+        {
+          "id": "component4",
+          "type": "Input.Text"
+        },
+        {
+          "showWhen": "component4 === 'YELLOW'",
+          "id": "component5",
+          "type": "Input.Text"
+        }
+      ]
+    }
+  ]
+}

@@ -10,15 +10,12 @@
   "main": "./lib/index.js",
   "dependencies": {
     "@wmfs/cardscript-schema": "1.30.0",
-    "dottie": "2.0.2",
     "esprima": "4.0.1",
-    "lodash": "4.17.21",
     "static-eval": "2.1.0"
   },
   "devDependencies": {
     "@semantic-release/changelog": "6.0.0",
     "@semantic-release/git": "10.0.0",
-    "@wmfs/cardscript-examples": "1.22.0",
     "chai": "4.3.4",
     "codecov": "3.8.3",
     "conventional-changelog-metahub": "4.0.1",

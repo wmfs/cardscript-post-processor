@@ -1,0 +1,286 @@
+{
+  "templateMeta": {
+    "name": "an-example-form",
+    "title": "An example form",
+    "category": "prevention"
+  },
+  "type": "AdaptiveCard",
+  "body": [
+    {
+      "type": "Container",
+      "title": "Identifying Information",
+      "items": [
+        {
+          "type": "Input.TelephoneNumber",
+          "id": "telNum",
+          "title": "Telephone number",
+          "spacing": "medium"
+        },
+        {
+          "type": "Input.Text",
+          "id": "name",
+          "title": "Name",
+          "spacing": "medium"
+        }
+      ]
+    },
+    {
+      "type": "Container",
+      "title": "Cooking Safety",
+      "items": [
+        {
+          "type": "Input.ChoiceSet",
+          "id": "usesChipPanOrDeepFatFryer",
+          "title": "Do you use a chip pan or deep fat fryer?",
+          "spacing": "medium",
+          "choices": [
+            {
+              "title": "Yes",
+              "value": "YES"
+            },
+            {
+              "title": "No",
+              "value": "NO"
+            }
+          ],
+          "style": "expanded"
+        },
+        {
+          "type": "TextBlock",
+          "id": "chipPanOrDeepFatFryerAdvice",
+          "showWhen": "data.usesChipPanOrDeepFatFryer === 'YES'",
+          "text": "Some advice about chip pan and deep fat fryer"
+        }
+      ]
+    },
+    {
+      "type": "Container",
+      "title": "Electrical Safety",
+      "items": [
+        {
+          "type": "TextBlock",
+          "id": "section3Info",
+          "text": "### Electrical Safety\n",
+          "markdown": true
+        },
+        {
+          "type": "Input.ChoiceSet",
+          "id": "electricBlanketsUsed",
+          "title": "Do you use electric blankets?",
+          "spacing": "medium",
+          "choices": [
+            {
+              "title": "Yes",
+              "value": "YES"
+            },
+            {
+              "title": "No",
+              "value": "NO"
+            }
+          ],
+          "style": "expanded"
+        },
+        {
+          "type": "TextBlock",
+          "id": "blanketAdvice",
+          "showWhen": "data.electricBlanketsUsed === 'YES'",
+          "text": "some advice about electric blankets",
+          "markdown": true
+        }
+      ]
+    },
+    {
+      "type": "Container",
+      "title": "Hearing Impaired Equipment Required",
+      "items": [
+        {
+          "type": "TextBlock",
+          "id": "HiAlarmSectionTitle",
+          "text": "### Hearing Impaired Equipment Required",
+          "markdown": true
+        },
+        {
+          "type": "Input.ChoiceSet",
+          "id": "hearingImpairmentInHousehold",
+          "title": "Does anybody in the property have a hearing impairment which prevents them from hearing their smoke alarm?",
+          "spacing": "medium",
+          "choices": [
+            {
+              "title": "Yes",
+              "value": "YES"
+            },
+            {
+              "title": "No",
+              "value": "NO"
+            }
+          ],
+          "style": "expanded"
+        },
+        {
+          "type": "TextBlock",
+          "id": "HiAlarmSection",
+          "showWhen": "data.hearingImpairmentInHousehold === 'YES'",
+          "text": "some info about HI Alarms",
+          "markdown": true
+        },
+        {
+          "type": "Input.ChoiceSet",
+          "id": "hearingImpairmentEquipmentRequired",
+          "showWhen": "data.hearingImpairmentInHousehold === 'YES'",
+          "title": "Is hearing impaired equipment required? (see notes)",
+          "spacing": "medium",
+          "choices": [
+            {
+              "title": "Yes",
+              "value": "YES"
+            },
+            {
+              "title": "No",
+              "value": "NO"
+            }
+          ],
+          "style": "expanded"
+        },
+        {
+          "type": "TextBlock",
+          "showWhen": "data.hearingImpairmentInHousehold === 'YES' && data.hearingImpairmentEquipmentRequired === 'YES'",
+          "text": "some info about hearing impairment alarms."
+        }
+      ]
+    },
+    {
+      "type": "Container",
+      "title": "Smoke Alarms",
+      "items": [
+        {
+          "type": "TextBlock",
+          "id": "section4Info",
+          "text": "### Smoke Alarms",
+          "markdown": true
+        },
+        {
+          "type": "Input.Number",
+          "id": "numberOfSmokeAlarms",
+          "title": "How many smoke alarms do you have in your home?",
+          "spacing": "medium",
+          "min": 0,
+          "validation": {
+            "required": true
+          }
+        },
+        {
+          "type": "Input.Number",
+          "id": "numberOfFloors",
+          "showWhen": "data.numberOfSmokeAlarms === 0",
+          "title": "How many floors are there in the property?",
+          "spacing": "medium",
+          "validation": {
+            "requiredIf": "data.numberOfSmokeAlarms === 0"
+          },
+          "min": 0
+        },
+        {
+          "type": "Container",
+          "showWhen": "data.numberOfSmokeAlarms > 0",
+          "items": [
+            {
+              "type": "Input.ChoiceSet",
+              "id": "smokeAlarmsOnEachStorey",
+              "title": "Do you have a smoke alarm on each storey of your home?",
+              "spacing": "medium",
+              "validation": {
+                "requiredIf": "data.numberOfSmokeAlarms > 0"
+              },
+              "choices": [
+                {
+                  "title": "Yes",
+                  "value": "YES"
+                },
+                {
+                  "title": "No",
+                  "value": "NO"
+                }
+              ],
+              "style": "expanded"
+            },
+            {
+              "type": "Input.Number",
+              "id": "numberOfFloorsWithoutSmokeAlarms",
+              "showWhen": "data.smokeAlarmsOnEachStorey === 'NO'",
+              "validation": {
+                "requiredIf": "data.smokeAlarmsOnEachStorey === 'NO'"
+              },
+              "title": "How many floors in the property do not have smoke alarms?",
+              "spacing": "medium",
+              "min": 0
+            },
+            {
+              "type": "Input.ChoiceSet",
+              "id": "ableToTestNow",
+              "title": "Able to test now?",
+              "spacing": "medium",
+              "choices": [
+                {
+                  "title": "Yes, working",
+                  "value": "YES_WORKING"
+                },
+                {
+                  "title": "Yes, not working",
+                  "value": "YES_NOT_WORKING"
+                },
+                {
+                  "title": "No",
+                  "value": "NO"
+                }
+              ],
+              "style": "expanded"
+            },
+            {
+              "type": "TextBlock",
+              "id": "testAdvice",
+              "showWhen": "data.ableToTestNow === 'NO'",
+              "text": "placeholder text...",
+              "markdown": true
+            },
+            {
+              "type": "Input.ChoiceSet",
+              "id": "ableToTestNowAdvice",
+              "showWhen": "data.ableToTestNow === 'NO'",
+              "title": "Have you given the above advice?",
+              "spacing": "medium",
+              "choices": [
+                {
+                  "title": "Yes",
+                  "value": true
+                },
+                {
+                  "title": "No",
+                  "value": false
+                }
+              ],
+              "style": "expanded"
+            },
+            {
+              "type": "Input.Number",
+              "id": "numberOfAlarmsFailedTesting",
+              "title": "How many smoke alarms failed testing?",
+              "validation": {
+                "requiredIf": "data.numberOfSmokeAlarms > 0"
+              },
+              "spacing": "medium",
+              "min": 0
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "actions": [
+    {
+      "type": "Action.Submit",
+      "title": "Submit"
+    }
+  ],
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "version": "1.0"
+}
