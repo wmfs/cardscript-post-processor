@@ -49,10 +49,5 @@
   },
   "publishConfig": {
     "access": "public"
-  },
-  "standard": {
-    "ignore": [
-      "lib/utils/local-util.js"
-    ]
   }
 }
