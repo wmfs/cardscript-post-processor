@@ -29,11 +29,16 @@ const tests = [
       name: 'Homer Simspon',
       phoneNumber: '07123456789',
       dietaryReq: ['GLUTEN_FREE'],
+      dietaryReqOther: null,
       size: 'S',
       savouryOrSweet: 'SAVOURY',
       base: 'BBQ',
       hot: false,
+      howHot: null,
       toppings: ['JALAPENOS', 'PINEAPPLE'],
+      primaryFlavour: null,
+      secondaryFlavour: null,
+      sprinkles: null,
       deliveryOrCollection: 'COLLECT'
     }
   },
@@ -62,6 +67,10 @@ const tests = [
       dietaryReqOther: 'Other...',
       size: 'M',
       savouryOrSweet: 'SWEET',
+      base: null,
+      hot: null,
+      howHot: null,
+      toppings: null,
       primaryFlavour: 'WHITE_CHOC',
       secondaryFlavour: 'DARK_CHOC',
       sprinkles: false,
@@ -78,7 +87,9 @@ const tests = [
     },
     output: {
       component1: 'RED',
-      component4: 'ORANGE'
+      component3: null,
+      component4: 'ORANGE',
+      component5: null
     }
   },
   {
@@ -103,8 +114,11 @@ const tests = [
       usesChipPanOrDeepFatFryer: 'NO',
       electricBlanketsUsed: 'YES',
       hearingImpairmentInHousehold: 'NO',
+      hearingImpairmentEquipmentRequired: null,
       numberOfSmokeAlarms: 3,
+      numberOfFloors: null,
       smokeAlarmsOnEachStorey: 'YES',
+      numberOfFloorsWithoutSmokeAlarms: null,
       ableToTestNow: 'YES_WORKING',
       numberOfAlarmsFailedTesting: 1
     }
@@ -133,7 +147,11 @@ const tests = [
       hearingImpairmentInHousehold: 'YES',
       hearingImpairmentEquipmentRequired: 'NO',
       numberOfSmokeAlarms: 0,
-      numberOfFloors: 2
+      numberOfFloors: 2,
+      smokeAlarmsOnEachStorey: null,
+      numberOfFloorsWithoutSmokeAlarms: null,
+      ableToTestNow: null,
+      numberOfAlarmsFailedTesting: null
     }
   }
 ]
@@ -141,8 +159,10 @@ const tests = [
 describe('Run some Cardscript-post-processor conversions', function () {
   for (const [idx, { cardscript, input, output }] of tests.entries()) {
     it(`Test ${idx}`, function () {
-      const transformedData = processor(cardscript, input)
+      const [transformedData, removed] = processor(cardscript, input)
       expect(transformedData).to.eql(output)
+      const nullValues = Object.entries(output).filter(([key, value]) => value === null).map(([key]) => key)
+      expect(nullValues.sort()).to.eql(removed.sort())
     })
   }
 })
