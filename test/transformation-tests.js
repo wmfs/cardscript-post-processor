@@ -179,16 +179,6 @@ const tests = [
 ]
 
 describe('Run some Cardscript-post-processor conversions', function () {
-  // it('ignore', () => {
-  //   const parse = require('esprima').parse
-  //   const evaluate = require('static-eval')
-  //   const showWhen = 'data.colours.find(e => e === \'blue\')'
-  //   const data = { colours: ['red', 'blue'] }
-  //   const ast = parse(showWhen).body[0].expression
-  //   const res = evaluate(ast, { data })
-  //   console.log(res)
-  // })
-
   for (const [idx, { cardscript, input, output }] of tests.entries()) {
     it(`Test ${idx + 1}`, function () {
       const [transformedData, removed] = processor(cardscript, input)
