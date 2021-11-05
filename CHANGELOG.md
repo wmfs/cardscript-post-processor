@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/wmfs/cardscript-post-processor/compare/v1.1.3...v1.2.0) (2021-11-05)
+
+
+### ✨ Features
+
+* component ignore list for api lookup and card list ([828067e](https://github.com/wmfs/cardscript-post-processor/commit/828067ef635faec1732b35d517a55f8c9d0e8360))
+
 ## [1.1.3](https://github.com/wmfs/cardscript-post-processor/compare/v1.1.2...v1.1.3) (2021-11-05)
 
 
