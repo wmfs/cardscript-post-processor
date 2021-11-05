@@ -1,3 +1,21 @@
+## [1.1.3](https://github.com/wmfs/cardscript-post-processor/compare/v1.1.2...v1.1.3) (2021-11-05)
+
+
+### 🐛 Bug Fixes
+
+* disable removing from data if the evaluated result is undefined ([23721ce](https://github.com/wmfs/cardscript-post-processor/commit/23721ce940bdc8869ae8a9aceefd9fb2bd14b373))
+
+
+### 🛠 Builds
+
+* **deps-dev:** update dependency mocha to v9.1.3 ([6e74663](https://github.com/wmfs/cardscript-post-processor/commit/6e74663026fe5505505788b7326879e46c2a9bef))
+* **deps-dev:** update semantic-release monorepo ([ef76714](https://github.com/wmfs/cardscript-post-processor/commit/ef767146e2caa878e45a4cd5ff1b0491edbc2064))
+
+
+### ♻️ Chores
+
+* remove commented test ([7a646b3](https://github.com/wmfs/cardscript-post-processor/commit/7a646b31fdbdd8a4bb5a9834505e48c4c2e01fb3))
+
 ## [1.1.2](https://github.com/wmfs/cardscript-post-processor/compare/v1.1.1...v1.1.2) (2021-10-08)
 
 
