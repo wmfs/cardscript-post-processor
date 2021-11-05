@@ -155,7 +155,7 @@ const tests = [
     }
   },
   {
-    cardscript: require('./fixtures/example-4.json'),
+    cardscript: require('./fixtures/example-array-find.json'),
     input: {
       colours: ['red', 'blue'],
       number: 4
@@ -166,7 +166,7 @@ const tests = [
     }
   },
   {
-    cardscript: require('./fixtures/example-4.json'),
+    cardscript: require('./fixtures/example-array-find.json'),
     input: {
       colours: ['red'],
       number: 3
@@ -174,6 +174,84 @@ const tests = [
     output: {
       colours: ['red'],
       number: 3 // the static-eval result returns undefined :-(
+    }
+  },
+  {
+    cardscript: require('./fixtures/example-api-lookup.json'),
+    input: {
+      allowLookup: true,
+      lookup: {
+        loading: false,
+        pagination: {
+          limit: 10,
+          offset: 0,
+          page: 1,
+          totalPages: 0
+        },
+        params: {
+          filter: 'Homer',
+          lookupList: [{ name: 'Homer' }]
+        },
+        results: [],
+        summary: { totalHits: 0 }
+      }
+    },
+    output: {
+      allowLookup: true,
+      lookup: {
+        loading: false,
+        pagination: {
+          limit: 10,
+          offset: 0,
+          page: 1,
+          totalPages: 0
+        },
+        params: {
+          filter: 'Homer',
+          lookupList: [{ name: 'Homer' }]
+        },
+        results: [],
+        summary: { totalHits: 0 }
+      }
+    }
+  },
+  {
+    cardscript: require('./fixtures/example-api-lookup.json'),
+    input: {
+      allowLookup: false,
+      lookup: {
+        loading: false,
+        pagination: {
+          limit: 10,
+          offset: 0,
+          page: 1,
+          totalPages: 0
+        },
+        params: {
+          filter: 'Homer',
+          lookupList: [{ name: 'Homer' }]
+        },
+        results: [],
+        summary: { totalHits: 0 }
+      }
+    },
+    output: {
+      allowLookup: false,
+      lookup: {
+        loading: false,
+        pagination: {
+          limit: 10,
+          offset: 0,
+          page: 1,
+          totalPages: 0
+        },
+        params: {
+          filter: 'Homer',
+          lookupList: [{ name: 'Homer' }]
+        },
+        results: [],
+        summary: { totalHits: 0 }
+      }
     }
   }
 ]

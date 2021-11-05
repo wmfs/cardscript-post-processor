@@ -1,0 +1,61 @@
+{
+  "templateMeta": {
+    "name": "an-example-form",
+    "title": "An example form",
+    "category": "prevention"
+  },
+  "type": "AdaptiveCard",
+  "body": [
+    {
+      "id": "lookup",
+      "type": "Input.ApiLookup",
+      "showPagination": false,
+      "buttonText": "Search",
+      "showWhen": "data.allowLookup",
+      "endpoint": {
+        "name": "tymly_search_1_0"
+      },
+      "ctxPaths": {
+        "results": "results",
+        "totalHits": "results.length"
+      },
+      "parametersCard": {
+        "type": "AdaptiveCard",
+        "version": "1.0",
+        "body": [
+          {
+            "id": "filter",
+            "type": "Input.Text",
+            "title": "Filter",
+            "spacing": "medium"
+          }
+        ]
+      },
+      "resultsCard": {
+        "type": "AdaptiveCard",
+        "version": "1.0",
+        "body": [
+          {
+            "id": "lookupList",
+            "type": "List",
+            "showWhen": "data.lookup.results",
+            "arrayPath": "data.lookup.results",
+            "selectionType": "multi",
+            "rowKey": "name",
+            "templates": {
+              "label": "{{item.name}}"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "actions": [
+    {
+      "type": "Action.Submit",
+      "title": "Submit"
+    }
+  ],
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "version": "1.0"
+}
