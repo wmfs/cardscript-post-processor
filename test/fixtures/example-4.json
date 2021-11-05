@@ -1,0 +1,29 @@
+{
+  "templateMeta": {
+    "name": "an-example-form",
+    "title": "An example form",
+    "category": "prevention"
+  },
+  "type": "AdaptiveCard",
+  "body": [
+    {
+      "type": "Container",
+      "showWhen": "data.colours.find(e => e === 'blue')",
+      "items": [
+        {
+          "id": "number",
+          "title": "Enter a number",
+          "type": "Input.Number"
+        }
+      ]
+    }
+  ],
+  "actions": [
+    {
+      "type": "Action.Submit",
+      "title": "Submit"
+    }
+  ],
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "version": "1.0"
+}
