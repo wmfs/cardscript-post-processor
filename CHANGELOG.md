@@ -1,3 +1,17 @@
+## [1.2.1](https://github.com/wmfs/cardscript-post-processor/compare/v1.2.0...v1.2.1) (2021-11-09)
+
+
+### 🐛 Bug Fixes
+
+* adding to condition so the test doenst fail ([9f0fb20](https://github.com/wmfs/cardscript-post-processor/commit/9f0fb2004fb18d629476b59fd6d53d2c3bea7d99))
+* checking if default value is present as this has caused issues in some forms ([1df60eb](https://github.com/wmfs/cardscript-post-processor/commit/1df60ebebe1d8b218d9afe46f86529e977e479d9))
+* using isPopulated ([777b731](https://github.com/wmfs/cardscript-post-processor/commit/777b731f15883794aaa18681ffb12723c05658cc))
+
+
+### 🚨 Tests
+
+* functionality changes required test changes ([a4e52fc](https://github.com/wmfs/cardscript-post-processor/commit/a4e52fcd1aa2ece527ae0a224a634b1a529c5354))
+
 # [1.2.0](https://github.com/wmfs/cardscript-post-processor/compare/v1.1.3...v1.2.0) (2021-11-05)
 
 
