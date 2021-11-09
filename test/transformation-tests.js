@@ -22,7 +22,7 @@ const tests = [
       toppings: ['JALAPENOS', 'PINEAPPLE'],
       primaryFlavour: 'WHITE_CHOC', // expect to be removed
       secondaryFlavour: 'DARK_CHOC', // expect to be removed
-      sprinkles: false, // expect to be removed
+      sprinkles: false, // expect not to be removed
       deliveryOrCollection: 'COLLECT'
     },
     output: {
@@ -38,7 +38,7 @@ const tests = [
       toppings: ['JALAPENOS', 'PINEAPPLE'],
       primaryFlavour: null,
       secondaryFlavour: null,
-      sprinkles: null,
+      sprinkles: false,
       deliveryOrCollection: 'COLLECT'
     }
   },
@@ -67,8 +67,8 @@ const tests = [
       dietaryReqOther: 'Other...',
       size: 'M',
       savouryOrSweet: 'SWEET',
-      base: null,
-      hot: null,
+      base: 'TOMATO',
+      hot: true,
       howHot: null,
       toppings: null,
       primaryFlavour: 'WHITE_CHOC',
