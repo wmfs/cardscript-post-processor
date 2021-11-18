@@ -1,3 +1,10 @@
+## [1.2.2](https://github.com/wmfs/cardscript-post-processor/compare/v1.2.1...v1.2.2) (2021-11-18)
+
+
+### 🐛 Bug Fixes
+
+* use default values rather than setting to null ([53b319b](https://github.com/wmfs/cardscript-post-processor/commit/53b319b748ff5b94ad3ae38fff5ac6b5a84a03a3))
+
 ## [1.2.1](https://github.com/wmfs/cardscript-post-processor/compare/v1.2.0...v1.2.1) (2021-11-09)
 
 
