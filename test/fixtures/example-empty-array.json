@@ -1,0 +1,52 @@
+{
+  "templateMeta": {
+    "name": "an-example-form",
+    "title": "An example form",
+    "category": "prevention"
+  },
+  "type": "AdaptiveCard",
+  "body": [
+    {
+      "type": "Input.ChoiceSet",
+      "id": "optionsCheck",
+      "choices": [
+        {
+          "title": "Yes",
+          "value": true
+        },
+        {
+          "title": "No",
+          "value": false
+        }
+      ]
+    },
+    {
+      "type": "Input.ChoiceSet",
+      "showWhen": "data.optionsCheck",
+      "id": "options",
+      "isMultiSelect": true,
+      "choices": [
+        {
+          "title": "A",
+          "value": "A"
+        },
+        {
+          "title": "B",
+          "value": "B"
+        },
+        {
+          "title": "C",
+          "value": "C"
+        }
+      ]
+    }
+  ],
+  "actions": [
+    {
+      "type": "Action.Submit",
+      "title": "Submit"
+    }
+  ],
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "version": "1.0"
+}
