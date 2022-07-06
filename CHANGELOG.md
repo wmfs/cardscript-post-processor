@@ -1,3 +1,19 @@
+# [1.4.0](https://github.com/wmfs/cardscript-post-processor/compare/v1.3.0...v1.4.0) (2022-07-06)
+
+
+### 🛠 Builds
+
+* **deps-dev:** update dependency [@wmfs](https://github.com/wmfs)/cardscript-extract-defaults to v1.35.0 ([a70a8b9](https://github.com/wmfs/cardscript-post-processor/commit/a70a8b91dfdbb64811c160804b86c8c95908b3e8))
+* **deps-dev:** update dependency [@wmfs](https://github.com/wmfs)/cardscript-extract-defaults to v1.35.1 ([eccf396](https://github.com/wmfs/cardscript-post-processor/commit/eccf3966af5c70ed221946be12e33e0f5f9451d5))
+* **deps-dev:** update dependency chai to v4.3.5 ([0de5c1b](https://github.com/wmfs/cardscript-post-processor/commit/0de5c1b2f80e250babbf4fd8057e5ea6eb516630))
+* **deps-dev:** update dependency chai to v4.3.6 ([2bd6555](https://github.com/wmfs/cardscript-post-processor/commit/2bd6555cfc0c08a62ba3ec7f0dfb4bdb03527198))
+* **deps-dev:** update dependency mocha to v10 ([0ebb270](https://github.com/wmfs/cardscript-post-processor/commit/0ebb270a4ebf9abbb3100128b1055dba075db7ce))
+* **deps-dev:** update dependency mocha to v9.2.1 ([0c6f398](https://github.com/wmfs/cardscript-post-processor/commit/0c6f39815a9ab5da8c8d467e10d128c05dc7cad0))
+* **deps-dev:** update dependency mocha to v9.2.2 ([596837f](https://github.com/wmfs/cardscript-post-processor/commit/596837f726d084aec6ce897451d3634f0265fc24))
+* **deps-dev:** update dependency semantic-release to v19.0.3 ([7136c7b](https://github.com/wmfs/cardscript-post-processor/commit/7136c7b77af74ad0f11fcd58e5248ba368a2b600))
+* **deps-dev:** update dependency standard to v17 ([422a2f9](https://github.com/wmfs/cardscript-post-processor/commit/422a2f92e0b12ecf6fc76ef120a657e98a314f3f))
+* **deps:** update dependency [@wmfs](https://github.com/wmfs)/cardscript-schema to v1.32.0 ([c9688de](https://github.com/wmfs/cardscript-post-processor/commit/c9688decff6cf6d6fe05f6e914015ca19c3ce10b))
+
 # [1.3.0](https://github.com/wmfs/cardscript-post-processor/compare/v1.2.2...v1.3.0) (2022-01-24)
 
 
