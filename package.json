@@ -14,7 +14,7 @@
     "static-eval": "2.1.0"
   },
   "devDependencies": {
-    "@wmfs/cardscript-extract-defaults": "1.35.1",
+    "@wmfs/cardscript-extract-defaults": "1.35.2",
     "@semantic-release/changelog": "6.0.1",
     "@semantic-release/git": "10.0.1",
     "chai": "4.3.6",
