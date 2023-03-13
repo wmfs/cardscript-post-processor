@@ -1,3 +1,25 @@
+# [1.5.0](https://github.com/wmfs/cardscript-post-processor/compare/v1.4.0...v1.5.0) (2023-03-13)
+
+
+### 🛠 Builds
+
+* **deps-dev:** update dependency [@semantic-release](https://github.com/semantic-release)/changelog to v6.0.2 ([010e611](https://github.com/wmfs/cardscript-post-processor/commit/010e611f969add6e0d739a401ea7cfbcf650b092))
+* **deps-dev:** update dependency [@wmfs](https://github.com/wmfs)/cardscript-extract-defaults to v1.35.2 ([4126314](https://github.com/wmfs/cardscript-post-processor/commit/4126314e3915d815f18cde1a88df62285337d11b))
+* **deps-dev:** update dependency [@wmfs](https://github.com/wmfs)/cardscript-extract-defaults to v1.36.0 ([29dc931](https://github.com/wmfs/cardscript-post-processor/commit/29dc93187ba6ae173fdc8033d6d90a523a1c67c2))
+* **deps-dev:** update dependency chai to v4.3.7 ([a3cd394](https://github.com/wmfs/cardscript-post-processor/commit/a3cd39403838113bf56e4d99c2c7bf9eafd3a3de))
+* **deps-dev:** update dependency mocha to v10.1.0 ([e82aae2](https://github.com/wmfs/cardscript-post-processor/commit/e82aae298c47ed4cd2f1df5492b2109092d2f10b))
+* **deps-dev:** update dependency mocha to v10.2.0 ([28f3a73](https://github.com/wmfs/cardscript-post-processor/commit/28f3a73cd4cc42e6920e7392b18a4e1b75e8940e))
+* **deps-dev:** update dependency semantic-release to v19.0.4 ([77fef84](https://github.com/wmfs/cardscript-post-processor/commit/77fef84a3baa0c6cbed9c76a265eeec4ba3c68fb))
+* **deps-dev:** update dependency semantic-release to v19.0.5 ([6e210d1](https://github.com/wmfs/cardscript-post-processor/commit/6e210d14408d6b3305407724639a589cfa9332bd))
+* **deps-dev:** update dependency semantic-release to v20 ([021edc0](https://github.com/wmfs/cardscript-post-processor/commit/021edc0cb602eb69ff189adc5b06797c12c4f016))
+* **deps-dev:** update dependency semantic-release to v20.0.1 ([fed8c62](https://github.com/wmfs/cardscript-post-processor/commit/fed8c62582c11ad913a65c835c1e15b55993bb86))
+* **deps-dev:** update dependency semantic-release to v20.0.2 ([c84ae98](https://github.com/wmfs/cardscript-post-processor/commit/c84ae9870e061885958fc9b7c326855cba42d3ef))
+* **deps-dev:** update dependency semantic-release to v20.0.3 ([56ac7d5](https://github.com/wmfs/cardscript-post-processor/commit/56ac7d5464f43f3013098983800ae6cc46c7be2c))
+* **deps-dev:** update dependency semantic-release to v20.0.4 ([046cc3a](https://github.com/wmfs/cardscript-post-processor/commit/046cc3a3ef8645a6eae8cb2c674e3f0797b8f721))
+* **deps-dev:** update dependency semantic-release to v20.1.0 ([4184837](https://github.com/wmfs/cardscript-post-processor/commit/41848377b31c74e105edd44ca5b797687a71f166))
+* **deps-dev:** update dependency semantic-release to v20.1.1 ([72dfd92](https://github.com/wmfs/cardscript-post-processor/commit/72dfd92a793ab166a1062fb69ccdc6a5527e1df2))
+* **deps:** update dependency [@wmfs](https://github.com/wmfs)/cardscript-schema to v1.33.0 ([95a1b02](https://github.com/wmfs/cardscript-post-processor/commit/95a1b02604714dd3b5bbef4c1def9b2e2f139ce1))
+
 # [1.4.0](https://github.com/wmfs/cardscript-post-processor/compare/v1.3.0...v1.4.0) (2022-07-06)
 
 
