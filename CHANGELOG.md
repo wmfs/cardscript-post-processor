@@ -1,3 +1,22 @@
+# [1.6.0](https://github.com/wmfs/cardscript-post-processor/compare/v1.5.0...v1.6.0) (2023-07-26)
+
+
+### 🛠 Builds
+
+* **deps-dev:** update dependency [@semantic-release](https://github.com/semantic-release)/changelog to v6.0.3 ([1552b54](https://github.com/wmfs/cardscript-post-processor/commit/1552b5426602bd5a41a8181fd86975263538c5cb))
+* **deps-dev:** update dependency [@wmfs](https://github.com/wmfs)/cardscript-extract-defaults to v1.37.0 ([036b5d6](https://github.com/wmfs/cardscript-post-processor/commit/036b5d6f1810cace15afbcc7c2beb6add4636660))
+* **deps-dev:** update dependency [@wmfs](https://github.com/wmfs)/cardscript-extract-defaults to v1.39.0 ([9e3c089](https://github.com/wmfs/cardscript-post-processor/commit/9e3c089ea02722f86d25c6591a8844fa164eb7df))
+* **deps-dev:** update dependency semantic-release to v20.1.3 ([8b82c59](https://github.com/wmfs/cardscript-post-processor/commit/8b82c5953e589b5e2c537a26a7fa3f6ff3962069))
+* **deps-dev:** update dependency semantic-release to v21 ([34f0df9](https://github.com/wmfs/cardscript-post-processor/commit/34f0df91ad66b9e6840bb56a0bea78376452cfd9))
+* **deps-dev:** update dependency semantic-release to v21.0.1 ([07793d0](https://github.com/wmfs/cardscript-post-processor/commit/07793d030c68fa9a0f026e37c0ff9ca27dcc15e6))
+* **deps-dev:** update dependency semantic-release to v21.0.2 ([b1bba74](https://github.com/wmfs/cardscript-post-processor/commit/b1bba745cce520a96fcb0331ec3a9689f3d96908))
+* **deps-dev:** update dependency semantic-release to v21.0.3 ([78dd9b7](https://github.com/wmfs/cardscript-post-processor/commit/78dd9b7b7182213e9d784602f8cf5ec9606816c4))
+* **deps-dev:** update dependency semantic-release to v21.0.5 ([5b1778c](https://github.com/wmfs/cardscript-post-processor/commit/5b1778c6055f4f6e8b59cb3f1d889d815697a94d))
+* **deps-dev:** update dependency semantic-release to v21.0.6 ([736b768](https://github.com/wmfs/cardscript-post-processor/commit/736b76854ae932147e66383656f7898ba4b1156c))
+* **deps-dev:** update dependency semantic-release to v21.0.7 ([d0ad7f3](https://github.com/wmfs/cardscript-post-processor/commit/d0ad7f3f98a7651777ee92cddee6b4d2f175f90a))
+* **deps-dev:** update dependency standard to v17.1.0 ([ea99bb3](https://github.com/wmfs/cardscript-post-processor/commit/ea99bb3dd72a595dcc93a777325eb9f483b62075))
+* **deps:** update dependency [@wmfs](https://github.com/wmfs)/cardscript-schema to v1.35.0 ([e7b5f55](https://github.com/wmfs/cardscript-post-processor/commit/e7b5f559e522b557b5242454cdd21ba7105c3e5d))
+
 # [1.5.0](https://github.com/wmfs/cardscript-post-processor/compare/v1.4.0...v1.5.0) (2023-03-13)
 
 
