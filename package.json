@@ -11,7 +11,7 @@
   "dependencies": {
     "@wmfs/cardscript-schema": "1.35.0",
     "esprima": "4.0.1",
-    "static-eval": "2.1.0"
+    "static-eval": "2.1.1"
   },
   "devDependencies": {
     "@wmfs/cardscript-extract-defaults": "1.39.0",
