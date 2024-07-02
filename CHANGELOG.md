@@ -1,3 +1,5 @@
+# [1.7.0](https://github.com/wmfs/cardscript-post-processor/compare/v1.6.0...v1.7.0) (2024-07-02)
+
 # [1.6.0](https://github.com/wmfs/cardscript-post-processor/compare/v1.5.0...v1.6.0) (2023-07-26)
 
 
