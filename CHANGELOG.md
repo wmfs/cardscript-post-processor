@@ -1,3 +1,11 @@
+## [1.9.0](https://github.com/wmfs/cardscript-post-processor/compare/v1.8.0...v1.9.0) (2025-02-10)
+
+### Build system dependencies :hammer:
+
+* **deps-dev:** update dependency mocha to v11.1.0 ([#124](https://github.com/wmfs/cardscript-post-processor/issues/124)) ([78bd647](https://github.com/wmfs/cardscript-post-processor/commit/78bd64703c49819516cc0a038a4b10a6a50c4e7c))
+* **deps-dev:** update dependency semantic-release to v24.2.2 ([#126](https://github.com/wmfs/cardscript-post-processor/issues/126)) ([234d427](https://github.com/wmfs/cardscript-post-processor/commit/234d427fcddcae5593d359cd8c3dd7b70b1eb8bb))
+* **deps:** update dependency @wmfs/cardscript-schema to v1.37.0 ([#125](https://github.com/wmfs/cardscript-post-processor/issues/125)) ([0f74037](https://github.com/wmfs/cardscript-post-processor/commit/0f74037d4e093456bf3aa52e134ea5d45fe69aaa))
+
 ## [1.8.0](https://github.com/wmfs/cardscript-post-processor/compare/v1.7.0...v1.8.0) (2025-01-10)
 
 ### Build system dependencies :hammer:
