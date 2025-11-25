@@ -9,7 +9,7 @@
   ],
   "main": "./lib/index.js",
   "dependencies": {
-    "@wmfs/cardscript-schema": "1.37.0",
+    "@wmfs/cardscript-schema": "1.38.0",
     "esprima": "4.0.1",
     "static-eval": "2.1.1"
   },
