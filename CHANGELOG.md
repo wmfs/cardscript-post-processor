@@ -1,3 +1,5 @@
+## [1.11.1](https://github.com/wmfs/cardscript-post-processor/compare/v1.11.0...v1.11.1) (2026-08-14)
+
 ## [1.11.0](https://github.com/wmfs/cardscript-post-processor/compare/v1.10.0...v1.11.0) (2025-11-25)
 
 ### Build system dependencies :hammer:
